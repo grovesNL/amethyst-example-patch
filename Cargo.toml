@@ -1,0 +1,17 @@
+[package]
+name = "example-patch"
+version = "0.1.0"
+authors = []
+edition = "2018"
+
+[dependencies]
+amethyst = "0.15.0"
+
+[features]
+default = ["metal"]
+empty = ["amethyst/empty"]
+metal = ["amethyst/metal"]
+vulkan = ["amethyst/vulkan"]
+
+[patch.crates-io]
+gfx-backend-metal = { git = "https://github.com/grovesNL/gfx", branch = "0.3-workaround" }

@@ -1,0 +1,4 @@
+(
+  title: "example-patch",
+  dimensions: Some((500, 500)),
+)
