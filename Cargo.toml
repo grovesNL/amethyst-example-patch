@@ -14,4 +14,5 @@ metal = ["amethyst/metal"]
 vulkan = ["amethyst/vulkan"]
 
 [patch.crates-io]
+gfx-hal = { git = "https://github.com/grovesNL/gfx", branch = "0.3-workaround" }
 gfx-backend-metal = { git = "https://github.com/grovesNL/gfx", branch = "0.3-workaround" }
